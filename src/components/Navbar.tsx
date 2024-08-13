@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { FaGithub } from "react-icons/fa";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,16 +33,28 @@ export default function Navbar() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-xl font-semibold leading-6 text-white">
+          <a
+            href="#hero"
+            className="text-xl font-semibold leading-6 text-white hover:text-amber-400"
+          >
             Home
           </a>
-          <a href="#" className="text-xl font-semibold leading-6 text-white">
-            Sobre Mi
-          </a>
-          <a href="#" className="text-xl font-semibold leading-6 text-white">
+          <a
+            href="#proyectos"
+            className="text-xl font-semibold leading-6 text-white hover:text-amber-400"
+          >
             Proyectos
           </a>
-          <a href="#" className="text-xl font-semibold leading-6 text-white">
+          <a
+            href="#experiencia"
+            className="text-xl font-semibold leading-6 text-white hover:text-amber-400"
+          >
+            Experiencia
+          </a>
+          <a
+            href="#contacto"
+            className="text-xl font-semibold leading-6 text-white hover:text-amber-400"
+          >
             Contacto
           </a>
         </PopoverGroup>
@@ -74,19 +87,19 @@ export default function Navbar() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  Proyectos
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
+                  Experiencia
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Company
+                  Contacto
                 </a>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import CardProyectList from "./components/CardProyect";
 import Experience from "./components/Experience";
 import Navbar from "./components/Navbar";
+import { FaGithub, FaLinkedin, FaCopy } from "react-icons/fa";
 import { db } from "./data/db";
 
 function App() {
@@ -10,7 +11,10 @@ function App() {
       <Navbar />
 
       {/* hero */}
-      <section className="max-w-full mx-8 md:mx-28 lg:mx-44 my-20 lg:my-40  flex flex-col items-center md:items-start text-center md:text-left">
+      <section
+        id="hero"
+        className="max-w-full mx-8 md:mx-28 lg:mx-44 my-20 lg:my-40  flex flex-col items-center md:items-start text-center md:text-left"
+      >
         <h4 className="text-amber-400 font-black text-xl md:text-2xl">
           HOLA, MI NOMBRE ES ANGELA
         </h4>
@@ -25,7 +29,10 @@ function App() {
       </section>
 
       {/* Tecnologías */}
-      <section className="flex justify-center w-auto mx-8 md:mx-28 lg:mx-44 items-center md:items-start text-center md:text-left">
+      <section
+        id="proyectos"
+        className="flex justify-center w-auto mx-8 md:mx-28 lg:mx-44 items-center md:items-start text-center md:text-left"
+      >
         <div className="grid content-center grid-cols-3 md:grid-cols-2 lg:grid-cols-6 gap-12">
           <div className="flex justify-center items-center max-w-[100px] max-h-[100px]">
             <img
@@ -73,7 +80,10 @@ function App() {
       </section>
 
       {/* proyectos */}
-      <section className="max-w-full mx-8 my-20 md:mx-28 lg:mx-44 items-center md:items-start text-center md:text-left">
+      <section
+        id="proyectos"
+        className="max-w-full mx-8 my-20 md:mx-28 lg:mx-44 items-center md:items-start text-center md:text-left"
+      >
         <h2 className="text-amber-400 font-black  my-20 text-xl md:text-4xl">
           PROYECTOS
         </h2>
@@ -83,8 +93,40 @@ function App() {
       </section>
 
       {/* experiencia */}
-      <section className="max-w-full mx-8 my-20 md:mx-28 lg:mx-44 items-center md:items-start text-center md:text-left">
+      <section
+        id="experiencia"
+        className="max-w-full mx-8 my-20 md:mx-28 lg:mx-44 items-center md:items-start text-center md:text-left "
+      >
         <Experience />
+      </section>
+
+      {/* Contacto */}
+
+      <section
+        id="contacto"
+        className="max-w-full mx-8 my-20 md:mx-28 lg:mx-44 items-center md:items-start text-center md:text-left"
+      >
+        <h2 className="text-amber-400 font-black  my-20 text-xl md:text-4xl">
+          CONTÁCTAME
+        </h2>
+        <ul className="mb-20 flex flex-col md:flex-row items-center justify-center gap-8 text-white font-bold">
+          <div className="flex flex-row gap-8">
+            <a href="" target="_blank" className="text-6xl">
+              <FaGithub />
+            </a>
+            <a href="" target="_blank" className="text-6xl">
+              <FaLinkedin />
+            </a>
+          </div>
+          <div className="flex flex-row">
+            <p className="text-2xl px-6 py-3 border-2 border-white rounded-md">
+              rubioporrasangela@gmail.com
+            </p>
+            <div className="text-2xl px-2 py-3 border-2 border-white rounded-md">
+              <FaCopy className="text-4xl" />
+            </div>
+          </div>
+        </ul>
       </section>
     </>
   );

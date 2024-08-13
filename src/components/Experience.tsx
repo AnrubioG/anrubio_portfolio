@@ -1,7 +1,7 @@
 export default function Experience() {
   return (
     <>
-      <h2 className="text-amber-400 my-10 font-black text-xl md:text-2xl">
+      <h2 className="text-amber-400 font-black  my-20 text-xl md:text-4xl">
         MI EXPERIENCIA
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
