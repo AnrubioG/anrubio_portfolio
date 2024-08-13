@@ -1,4 +1,6 @@
+import CardProyectList from "./components/CardProyect";
 import Navbar from "./components/Navbar";
+import { db } from "./data/db";
 
 function App() {
   return (
@@ -17,8 +19,12 @@ function App() {
           necesidades y a las de tus usuarios.
         </p>
       </section>
-
-      <section className="max-w-full mx-8 my-20 md:mx-28 lg:mx-44 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"></section>
+      <section className="max-w-full mx-8 my-20 md:mx-28 lg:mx-44 ">
+        <h2 className="text-amber-400  my-20 text-xl md:text-4xl">PROYECTOS</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <CardProyectList proyectos={db} />
+        </div>
+      </section>
     </>
   );
 }
