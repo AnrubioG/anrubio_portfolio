@@ -21,20 +21,22 @@ export default function CardProyectList({ proyectos }: CardProyectListProps) {
           <h2 className="absolute inset-0  bg-gradient-to-r from-black via-transparent to-transparent text-4xl font-black text-white p-4">
             {proyecto.name}
           </h2>
-          <div className="absolute flex inset-0 items-end bg-black text-xl font-bold text-white p-4 opacity-0 transition-opacity duration-300 hover:opacity-70">
-            <p>{proyecto.description}</p>
-            <ul className="text-4xl font-black grid gap-5">
-              <li>
-                <FaReact />
-              </li>
-              <li>
-                <FaJsSquare />
-              </li>
-              <li>
-                <FaCss3Alt />
-              </li>
-            </ul>
-          </div>
+          <a href={proyecto.link} target="_blank">
+            <div className="absolute flex inset-0 justify-between items-end bg-black text-xl font-bold text-white p-4 opacity-0 transition-opacity duration-300 hover:opacity-70">
+              <p>{proyecto.description}</p>
+              <ul className="text-4xl font-black grid gap-5">
+                <li>
+                  <FaReact />
+                </li>
+                <li>
+                  <FaJsSquare />
+                </li>
+                <li>
+                  <FaCss3Alt />
+                </li>
+              </ul>
+            </div>
+          </a>
         </div>
       ))}
     </>
