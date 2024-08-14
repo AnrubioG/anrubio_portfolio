@@ -5,14 +5,14 @@ export default function Experience() {
         MI EXPERIENCIA
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div className="h-full rounded-2xl overflow-hidden">
+        <div className="w-full h-auto rounded-2xl overflow-hidden">
           <img src="/img/usuarios.jpg" alt="" className="h-full object-cover" />
         </div>
         <div>
           <h3 className="text-amber-400 my-5 text-center text-xl md:text-2xl">
             UN ENFOQUE EN EL CLIENTE:
           </h3>
-          <p className="text-2xl text-center md:text-left md:text-2xl max-w-6xl text-white mt-4 md:mt-8">
+          <p className="text-2xl text-left md:text-2xl max-w-6xl text-white mt-4 md:mt-8">
             Cuento con más de 5 años de experiencia en atención al cliente en
             diversos sectores, donde he desarrollado habilidades clave como el
             trabajo en equipo, la comunicación asertiva y una meticulosa
