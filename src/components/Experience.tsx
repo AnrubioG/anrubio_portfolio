@@ -5,7 +5,7 @@ export default function Experience() {
         MI EXPERIENCIA
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div className="w-full h-auto rounded-2xl overflow-hidden">
+        <div className="w-full max-h-80 md:max-h-full rounded-2xl overflow-hidden">
           <img src="/img/usuarios.jpg" alt="" className="h-full object-cover" />
         </div>
         <div>
@@ -24,7 +24,7 @@ export default function Experience() {
           </p>
 
           <div>
-            <p className="text-2xl text-center md:text-left md:text-2xl max-w-6xl text-white mt-4 md:mt-8">
+            <p className="text-2xl text-left md:text-2xl max-w-6xl text-white mt-4 md:mt-8">
               Te invito a conocer más sobre mi experiencia y habilidades:
             </p>
             <a
