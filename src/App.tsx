@@ -2,9 +2,24 @@ import CardProyectList from "./components/CardProyect";
 import Experience from "./components/Experience";
 import Navbar from "./components/Navbar";
 import { FaGithub, FaLinkedin, FaCopy } from "react-icons/fa";
+import Swal from "sweetalert2";
 import { db } from "./data/db";
 
 function App() {
+  const email: string = "rubioporrasangela@gmail.com";
+
+  const copiarEmail = (email: string) => {
+    navigator.clipboard.writeText(email);
+    Swal.fire({
+      position: "top",
+      background: "#EA580C",
+      color: "#fff",
+      title: "Copiado con exito",
+      showConfirmButton: false,
+      timer: 800,
+    });
+  };
+
   return (
     <>
       {/* navbar */}
@@ -111,20 +126,31 @@ function App() {
         </h2>
         <ul className="mb-20 flex flex-col md:flex-row items-center justify-center gap-8 text-white font-bold">
           <div className="flex flex-row gap-8">
-            <a href="" target="_blank" className="text-6xl">
+            <a
+              href="https://github.com/AnrubioG"
+              target="_blank"
+              className="text-6xl"
+            >
               <FaGithub />
             </a>
-            <a href="" target="_blank" className="text-6xl">
+            <a
+              href="https://www.linkedin.com/in/anrubiodev/"
+              target="_blank"
+              className="text-6xl"
+            >
               <FaLinkedin />
             </a>
           </div>
-          <div className="flex flex-row">
-            <p className="text-2xl px-6 py-3 border-2 border-white rounded-md">
+          <div className="flex flex-row gap-1">
+            <p className="text-xl md:text-2xl px-3 md:px-6 py-3 border-2 border-white rounded-md">
               rubioporrasangela@gmail.com
             </p>
-            <div className="text-2xl px-2 py-3 border-2 border-white rounded-md">
+            <button
+              className="text-2xl px-2 py-3 border-2 border-white rounded-md"
+              onClick={() => copiarEmail(email)}
+            >
               <FaCopy className="text-4xl" />
-            </div>
+            </button>
           </div>
         </ul>
       </section>
