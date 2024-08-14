@@ -3,10 +3,10 @@ import { Proyecto } from "../types";
 export const db: Proyecto[] = [
   {
     id: 1,
-    name: "Contador de Calorias",
+    name: "Contador de Calorías",
     image: "proyecto-1",
     description:
-      "Registra comidas y ejercicios calculando el balance de calorias",
+      "Registra comidas y ejercicios calculando el balance de calorías",
     link: "https://github.com/AnrubioG/contador_calorias.git",
   },
   {

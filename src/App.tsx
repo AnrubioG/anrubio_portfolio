@@ -154,6 +154,40 @@ function App() {
           </div>
         </ul>
       </section>
+
+      <footer className="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+        <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+            . Creado por Angela Rubio.
+          </span>
+          <ul className="grid grid-cols-2 md:grid-rows-1 md:grid-cols-2  items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 gap-y-3 gap-x-6">
+            <a
+              href="#hero"
+              className="text-xl font-semibold leading-6 text-white hover:text-amber-400"
+            >
+              Home
+            </a>
+            <a
+              href="#proyectos"
+              className="text-xl font-semibold leading-6 text-white hover:text-amber-400"
+            >
+              Proyectos
+            </a>
+            <a
+              href="#experiencia"
+              className="text-xl font-semibold leading-6 text-white hover:text-amber-400"
+            >
+              Experiencia
+            </a>
+            <a
+              href="#contacto"
+              className="text-xl font-semibold leading-6 text-white hover:text-amber-400"
+            >
+              Contacto
+            </a>
+          </ul>
+        </div>
+      </footer>
     </>
   );
 }
